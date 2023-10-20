@@ -1,0 +1,63 @@
+body {
+  background: linear-gradient(to right, #7ac07a, #b6b6dc);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: linear-gradient(to right, #7ac07a, #b6b6dc);
+}
+
+
+tr:nth-child(even) {
+  background: linear-gradient(to right, #7ac07a, #b6b6dc);
+}
+
+
+td img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media screen and (max-width: 500px) {
+  table {
+    border: 1px solid #ccc;
+  }
+
+  th,
+  td {
+    padding: 4px;
+  }
+
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  tr {
+    margin-bottom: 0.625em;
+  }
+
+  td {
+    text-align: right;
+  }
+
+  td:before {
+    content: attr(data-label);
+  }
+}
